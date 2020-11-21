@@ -1,5 +1,5 @@
-#include "grafo-lista.h"
-#include "grafo-ops.h"
+#include "../src/grafo-lista.h"
+#include "../src/grafo-ops.h"
 
 int main() {
 	

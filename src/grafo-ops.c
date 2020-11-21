@@ -1,5 +1,7 @@
 #include "grafo-lista.h"
 
+#define OUT_FILE "out/pontes.txt"
+
 int qtd_nos(Grafo *g) {
     if (!g) return 0;
     Grafo *p = g;
@@ -88,7 +90,7 @@ void pontes(Grafo *g) {
 	int  i, j;
 	int numPontes = 0;
 	int max = qtd_nos(g);
-	FILE *arq = fopen("out/pontes.txt", "w");
+	FILE *arq = fopen(OUT_FILE, "w");
 	
 	while(p) {
 		Viz *v = p->prim;
